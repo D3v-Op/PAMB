@@ -18,7 +18,7 @@ def speedtst(update, context):
     test.results.share()
     result = test.results.dict()
     context.bot.editMessageText(
-        "Speeds ⚡️ : "f"\n\n 📥 {speed_convert(result['download'])}\n 📤 {speed_convert(result['upload'])}\n"
+        "Speeds ⚡️ : "f"\n 📥 {speed_convert(result['download'])}\n 📤 {speed_convert(result['upload'])}\n\n"
         "⏱ Ping : "f"{result['ping']}\n"
         "🏬 ISP : "
         f"{result['client']['isp']}",
